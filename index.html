@@ -1,20 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Salary Calculator</title>
-</head>
-<body>
-  <header>
-    <h1>Salary Calculator</h1>
-  </header>
-  <main>
-    <h2>Add Employee</h2>
-    <h2>Employees</h2>
-  </main>
-  <footer>
-    <p>Total Monthly</p>
-  </footer>
-</body>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <meta charset="UTF-8" />
+
+    <title>Salary Calculator</title>
+  </head>
+  <body>
+    <header id="main-title">
+      <h1>Salary Calculator</h1>
+    </header>
+    <main>
+      <form onsubmit="preventFormSubmit(event); onFormSubmit()">
+        <h2 class="add">
+          Add Employee
+          <hr />
+        </h2>
+
+        <label for="firstName">Firstname</label>
+        <input
+          type="text"
+          id="firstname"
+          name="firstName"
+          data-testid="firstname"
+        />
+        <label for="lastName">Lastname</label>
+        <input
+          type="text"
+          id="lastName"
+          name="lastname"
+          data-testid="lastname"
+        />
+        <label for="employeID">EmployeeID</label>
+        <input
+          type="text"
+          id="employeid"
+          name="employeid"
+          data-testid="employeid"
+        />
+        <label for="title">Employe title</label>
+        <input type="text" id="title" name="title" data-testid="title" />
+        <label for="salary">Annual salry</label>
+        <input type="text" id="salary" name="salary" data-testid="salary" />
+        <p class="emptyfield" style="color: red; font-size: 1.2rem"></p>
+        <input type="submit" value="Add Employee" id="addemployee" />
+      </form>
+    </main>
+    <div id="displaydata">
+      <h2>Employee Data</h2>
+      <table id="employedata">
+        <thead>
+          <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Employee ID</th>
+            <th>title</th>
+            <th>Annual Salary</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <footer id="salarydisplay">
+      <p>Total Monthly : <span id="salary">5</span></p>
+    </footer>
+    <script src="client.js"></script>
+  </body>
 </html>

@@ -1,0 +1,167 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(220, 220, 220, 0.933);
+}
+#main-title {
+  width: 100vw;
+  height: 10%;
+  background-color: rgb(152, 152, 152);
+  position: relative;
+}
+
+#main-title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  text-align: center;
+  padding-top: 15px;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 4px 4px rgba(194, 194, 194, 0.6);
+  position: relative;
+}
+
+#main-title main,
+form {
+  width: 20%;
+  height: 700px;
+  margin-top: 5px;
+  margin-left: 30px;
+  background-color: rgb(243, 243, 243);
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: 1px solid #843;
+  box-shadow: 10px 10px 10px rgb(189, 189, 189);
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+.add {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+.add hr {
+  width: 100%;
+  height: 2px;
+  margin-top: 5px;
+}
+#main-title main,
+form label {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+#main-title main,
+form,
+input {
+  padding: 8px 35px;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 1.3rem;
+  margin-bottom: 7px;
+}
+
+#addemployee {
+  background-color: yellow;
+  margin-left: 40px;
+  padding: 10px 30px;
+}
+
+#main-title main,
+form button {
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+#displaydata {
+  width: 65%;
+  height: 400px;
+
+  position: relative;
+  top: -695px;
+  left: 550px;
+}
+#displaydata h2 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+#displaydata table {
+  width: 100%;
+
+  border-collapse: collapse;
+  box-shadow: 10px 10px 10px rgb(189, 189, 189);
+  border-radius: 30px;
+}
+#displaydata table thead {
+  background-color: rgb(168, 168, 168);
+  border-radius: 100px;
+}
+#displaydata table thead tr th {
+  padding: 5px 20px;
+  border: 2px solid black;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.2px;
+  font-size: 1.1rem;
+  color: black;
+}
+#displaydata table tbody tr td {
+  padding: 5px 20px;
+
+  border: 2px solid black;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+  color: black;
+}
+#displaydata table .totalsalary {
+  padding: 5px 20px;
+  text-align: right;
+
+  border: 2px solid black;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+  color: black;
+}
+.btngreen {
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  background-color: #66f674;
+  cursor: pointer;
+}
+.btnred {
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  background-color: #fb5935;
+  cursor: pointer;
+}
+
+#displaydata table tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+#salarydisplay {
+  position: relative;
+  top: -895px;
+  left: 1350px;
+}
+#salarydisplay p,
+span {
+  font-family: Open sans;
+  font-size: 1.3rem;
+}
